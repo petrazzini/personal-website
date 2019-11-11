@@ -5,28 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Arnaldo Petrazzini </title>
-    <style>
-
-    body{
-        font-family: sans-serif;
-        display: flex;
-        justify-content: center;
-        margin: 0;
-        padding: 0;
-        flex-direction: column;
-    }
-    div{
-        padding: 32px;
-        font-size: 14px;
-        letter-spacing: 1px;
-        line-height: 24px;
-        text-align: center;
-    }
-    </style>
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="stylesheet" href="https://use.typekit.net/epi2qos.css">
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <div>
-        Hi there, i'm a product designer, currently working at <a href="http://stoika.design">Stoika</a> as a partner and designer solving problems to emerging digital companies in Brazil.
-    </div>    
+    <div class="info">
+        Hi there, i'm a product designer, cofounder of <a href="http://stoika.design">Stoika</a>, solving problems to emerging digital companies in Brazil.
+    </div>
+    <div class="reso">
+        <a href="https://instagram.com/petrazzini">Instagram</a> <a href="https://linkedin.com/in/petrazzini">Linkedin</a> <a href="https://dribbble.com/petrazzini">Dribbble</a>
+    </div>
+    <div class="pointer"></div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        $(document).mousemove(function(e){
+            $('.pointer').css({left: e.pageX, top: e.pageY})
+        })
+    </script>
 </body>
 </html>

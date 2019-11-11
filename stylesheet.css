@@ -1,0 +1,53 @@
+body{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    overflow: hidden;
+    font-family: calluna, serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.info{
+    padding: 32px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    text-align: center;
+    z-index: 1;
+    font-family: calluna, serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.pointer{
+    width: 320px;
+    height: 480px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    pointer-events: none;
+    transition: ease-in-out 0.02s;
+    z-index: -1;
+    cursor: pointer;
+    background-image: url(me-rio.JPG);
+}
+
+.reso{
+    display: flex;
+    font-weight: 900;
+    justify-content: center; 
+}
+.reso a{
+    color: #000;
+    text-decoration: none;
+    margin: 16px;
+}
+.reso a:hover{
+    text-decoration: underline;
+    color: #fff;
+}
