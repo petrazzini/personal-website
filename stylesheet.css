@@ -34,7 +34,7 @@ body{
     transition: ease-in-out 0.02s;
     z-index: -1;
     cursor: pointer;
-    background-image: url(me-rio.JPG);
+    background-image: url(me.JPG);
 }
 
 .reso{
