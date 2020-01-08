@@ -4,31 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Arnaldo Petrazzini - Product designer </title>
+    <title>Arnaldo Petrazzini ⏤ Product & visual </title>
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="https://use.typekit.net/epi2qos.css">
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <div class="info">
-        <h1>
-        I'm a product designer & independent artist
-        </h1>
-        <p>Cofounder of Stoika, solving problems to emerging digital companies in Brazil.</p>
-        </div>
-    <div class="reso">
-        <a href="https://instagram.com/petrazzini" class="ig">IG</a> <a href="https://linkedin.com/in/petrazzini" class="in">IN</a> <a href="https://dribbble.com/petrazzini" class="db">DB</a>
+    <div class="content">
+        <div class="topbar">
+            <p>Arnaldo Petrazzini</p>
+            <p>Product & visual</p>
+            <p>One of the five behind <a href="#">Stoika Design</a></p>
+        </div>
+        <div class="shortbio">
+            <p> Brazilian designer and visual artist focused on visual and product design, one of the cofounders of stoika, an experience design company.</p>
+            <p class="subtitle">Past Design Lead at Organizze.</p>
+        </div>
+        <div class="social">
+            <a href="https://www.instagram.com/petrazzini/" target="_blank">Instagram</a>
+            <a href="https://www.linkedin.com/in/petrazzini" target="_blank">Linkedin</a>
+            <a href="https://www.dribbble.com/petrazzini" target="_blank">Dribbble</a>
+        </div>
     </div>
-    <div class="pointer"></div>
-    <div class="pointer2"></div>
+    <div class="pointer">
+    </div>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script type="text/javascript">
         $(document).mousemove(function(e){
             $('.pointer').css({left: e.pageX, top: e.pageY})
-        })
-        $(document).mousemove(function(e){
-            $('.pointer2').css({left: e.pageX, top: e.pageY})
-        })        
+        })    
+        $(function() {
+        $('a').hover(function() {
+        $('.pointer').css('background-color', '#ddd').css('transform', 'scale(0.2)').css('transition', 'ease 0.2s');
+        }, function() {
+        // on mouseout, reset the background colour
+        $('.pointer').css('background-color', '#000').css('transform', 'scale(1)').css('transition', 'ease 0.03s');
+        });
+        });  
     </script>
 </body>
 </html>
