@@ -41,6 +41,12 @@ body{
     display: flex;
     flex-direction: column;
 }
+.slider ::-moz-selection{
+    display: none;
+}
+.slider ::selection{
+    display: none;
+}
 
 .slider div img{
     max-width: 480px;
