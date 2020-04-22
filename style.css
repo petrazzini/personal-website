@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+@font-face {
+    font-family: 'Telegraf';
+    font-weight: 400;
+    src: url(font/Telegraf-Regular.otf);
+}
+@font-face {
+    font-family: 'Telegraf';
+    font-weight: 700;
+    src: url(font/Telegraf-Bold.otf);
+}
+
+body{
+    font-size: 18px;
+    font-family: 'Telegraf', system-ui, sans-serif;
+    font-weight: 400;
+    background-color: #F5F9FA;
+    background-position: 400px 120px;
+    background-repeat: no-repeat;
+}
+
+.header{
+    font-size: 18px;
+    font-weight: 400;
+    padding: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.slider{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 104px;
+    margin-bottom: 104px;
+}
+
+.slider div{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.slider div img{
+    max-width: 480px;
+    z-index: 2;
+}
+.slider div p{
+    font-size: 16px;
+    margin-top: 16px;
+    opacity: 0;
+    transition: ease-in-out 0.3s;
+    transition-delay: 0.2s;
+}
+.slider div a{
+    font-size: 14px;
+    color: #00000060;
+    text-decoration: none;
+}
+.slider div a:hover{
+    text-decoration: underline;
+    color: #000000;
+}
+
+.slider div:hover p{
+    opacity: 1;
+    transition: ease-in-out 0.25s;
+}
+.slider:hover{
+    cursor: grab;
+}
+.slider:active{
+    cursor: grabbing;
+}
+
+
+.intro{
+    max-width: 400px;
+    margin: 80px;
+}
+
+.intro p{
+    font-size: 22px;
+    line-height: 180%;
+    font-weight: 400;
+    margin-bottom: 16px;
+    text-align: left;
+    color: #00000080;
+}
+.intro p:last-child{
+    font-size: 16px;
+}
+.intro h1{
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 80px;
+}
+.social{
+    display: flex;
+    flex-direction: column;
+}
+.social p{
+    margin-bottom: 32px;
+}
+.social div{
+    display: flex;
+    flex-direction: row;
+}
+.social div a{
+    text-decoration: none;
+    color: #00000060;
+    margin-right: 24px;
+}
+.social div a:hover{
+    color: #000;
+    text-decoration: underline;
+}
+
+
+.mailto-link {
+	color: #000;
+	padding: 16px 0;
+	position: relative;
+	text-decoration: none;
+}
+
+.mailto-link:focus .mailto-message,
+.mailto-link:focus-within .mailto-message,
+.mailto-link:hover .mailto-message {
+	display: block;
+}
+
+.mailto-message {
+	display: none;
+	top: 8px;
+	left: 50%;
+	width: auto;
+	background-color: #000000;
+	border-radius: 4px;
+	color: #ffffff;
+    font-size: 13px;
+    text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 0;
+	margin-bottom: -5px;
+	padding: 12px 16px 10px 16px;
+	position: absolute;
+	transform: translate(-50%, -100%);
+	-webkit-transform: translate(-50%, -100%);
+    white-space: nowrap;
+    transition: ease 0.2s;
+}
+
+.mailto-message:after {
+	content: ''
+}
+
+.email{
+    padding: 24px;
+    border-radius: 8px;
+    transition: ease 0.2s;
+    border: solid 2px #00000000;
+}
+.email:hover{
+    border: solid 2px #00000020;
+}
+.email:active{
+    background-color: #00000020;
+}
+
+@media only screen and (max-width: 768px) {
+    .slider div p{
+        opacity: 1;
+    }
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 80px;
+    }
+    
+    .social div{
+        flex-direction: column;
+    }
+    .social div a{
+        margin-bottom: 16px;
+    }
+
+}
+
+@media only screen and (max-width: 425px) {
+    .header{
+        padding: 48px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }    
+    .header .status{
+        margin-top: 24px;
+        font-size: 16px;
+        color: #00000060;
+    }
+    .intro{
+        margin: 48px;
+    }
+
+    .slider div img{
+        max-width: 320px;
+        z-index: 2;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 32px 32px 80px 32px;
+    }
+    .social{
+        margin-bottom: 40px;
+    }
+}
+
+
+@media only screen and (max-width: 320px) {
+    .header{
+        padding: 48px 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }    
+    .header .status{
+        margin-top: 16px;
+        font-size: 16px;
+        color: #00000060;
+    }
+    .intro{
+        margin: 32px;
+    }
+    
+    .slider div img{
+        max-width: 240px;
+        z-index: 2;
+    }
+
+    .rodape{
+        align-items: flex-start;
+        padding: 0
+    }
+    .social{
+        align-items: left;
+    }
+    .social div{
+        flex-direction: column;
+    }
+    .social div a{
+        margin-bottom: 24px;
+    }
+
+    .email{
+        padding: 8px;
+        font-size: 16px;
+    }
+
+}
