@@ -3,6 +3,17 @@
     padding: 0;
     outline: none;
 }
+@font-face {
+    font-family: Telegraf;
+    font-weight: 400;
+    src: url(font/Telegraf-Regular.otf);
+}
+@font-face {
+    font-family: Telegraf;
+    font-weight: 700;
+    src: url(font/Telegraf-Bold.otf);
+}
+
 body{
     font-size: 18px;
     font-family: telegraf;
