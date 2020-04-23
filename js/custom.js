@@ -4,6 +4,7 @@ var slider = tns({
     slideBy: 'page',
     autoWidth: true,
     mouseDrag: true,
+    arrowKeys: true,
     swipeAngle: false,
     controls: false,
     nav: false,
