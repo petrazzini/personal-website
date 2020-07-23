@@ -6,9 +6,14 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: "Neue Montreal";
+  src: url(../font/NeueMontreal-Regular.otf);
+}
+
 :root {
   --sans-serif: Neue Montreal;
-  --serif: Adobe Garamond Pro;
+  --serif: Adobe Caslon;
 }
 
 a {
