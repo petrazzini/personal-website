@@ -32,6 +32,9 @@ body {
   line-height: 160%;
   margin-bottom: 16px;
 }
+.content .bio .line-through {
+  text-decoration: line-through;
+}
 
 .contact {
   display: flex;
