@@ -42,6 +42,10 @@
   height: auto;
   margin-top: 40px;
 }
+.content .header {
+  margin-top: 104px;
+  max-width: 680px;
+}
 
 @keyframes load-time {
   0% {
