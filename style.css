@@ -1,0 +1,32 @@
+body {
+  font-size: 24px;
+  font-family: sans-serif;
+  color: #111111;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+p {
+  padding: 24px 32px;
+  border-radius: 60px;
+  border: solid 2px #111111;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a p {
+  color: #ffffff;
+  background-color: #111111;
+  box-shadow: 0 0 0 0 #000;
+  transition: box-shadow ease 0.3s;
+}
+
+a:hover p {
+  background-color: #111111;
+  box-shadow: 0 0 0 10px #111111;
+}
