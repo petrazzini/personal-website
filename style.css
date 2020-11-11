@@ -1,16 +1,21 @@
 body {
-  font-size: 24px;
+  font-size: 14px;
   font-family: sans-serif;
   color: #111111;
+}
+
+.content {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 200px;
 }
 
 p {
-  padding: 24px 32px;
+  padding: 14px 24px;
   border-radius: 60px;
-  border: solid 2px #111111;
+  border: solid 1px #111111;
   text-transform: uppercase;
   margin-top: 0;
 }
