@@ -31,8 +31,8 @@ body{
     align-items: center;
 }
 .slider img{
-    height: auto;
-    width: 100%;
+    height: 800px;
+    width: auto;
 }
 .tns-ovh{
     border-radius: 12px;
