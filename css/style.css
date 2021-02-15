@@ -48,6 +48,7 @@ p{
 }
 .name{
     min-width: 240px;
+    margin-bottom: 80px;
 }
 .bio{
     max-width: 480px;
@@ -59,7 +60,7 @@ p{
 
 .footer{
     position: absolute;
-    padding: 200px 80px 40px 80px;
+    padding: 80px 80px 40px 80px;
     bottom: 0;
     right: 0;
 }
