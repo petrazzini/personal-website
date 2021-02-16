@@ -13,6 +13,9 @@ body{
     height: 100vh;
     background-color: #fff;
     border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 a{
     text-decoration: none;
@@ -38,7 +41,7 @@ p{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    padding: 200px 80px;
+    padding: 120px 80px 24px 80px;
 }
 
 .header .left{
@@ -48,19 +51,23 @@ p{
 }
 .name{
     min-width: 240px;
-    margin-bottom: 80px;
+    margin-bottom: 32px;
 }
 .bio{
     max-width: 480px;
-    margin-bottom: 80px;
+    margin-bottom: 120px;
 }
 .bio p{
     margin-bottom: 40px;
 }
 
 .footer{
-    position: absolute;
-    padding: 80px 80px 40px 80px;
-    bottom: 0;
-    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+}
+.footer p{
+    margin-bottom: 16px;
 }
